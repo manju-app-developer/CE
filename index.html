@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrafficAI - Smart Traffic Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- 🔄 Theme Toggle -->
+    <button id="toggle-mode">🌙 Dark Mode</button>
+
+    <!-- 🚗 TrafficAI Header -->
+    <header>
+        <h1>🚦 Commute Ease</h1>
+        <p>AI-Powered Smart Traffic Management System</p>
+    </header>
+
+    <!-- 🗺️ Interactive Traffic Map (Without APIs) -->
+    <section class="map-container">
+        <h2>Live Traffic Map</h2>
+        <canvas id="traffic-map"></canvas>
+    </section>
+
+    <!-- 🚦 Real-Time Traffic Updates -->
+    <section class="traffic-status">
+        <h2>Traffic Updates</h2>
+        <p class="traffic-display">Fetching live data...</p>
+    </section>
+
+    <!-- 🛣️ AI-Powered Route Optimization -->
+    <section class="route-optimization">
+        <h2>Find the Best Route</h2>
+        <input type="text" id="start-location" placeholder="Enter Start Location">
+        <input type="text" id="end-location" placeholder="Enter Destination">
+        <button id="route-optimize">🚀 Optimize Route</button>
+    </section>
+
+    <!-- 🗺️ Basic Map Without APIs -->
+    <section class="map-container">
+        <h2>Traffic Map</h2>
+        <div id="simple-map"></div>
+    </section>
+
+    <!-- 🎤 Voice Commands -->
+    <section class="voice-control">
+        <h2>Voice Control</h2>
+        <button id="voice-command">🎙️ Activate Voice Command</button>
+        <p id="voice-status">Say "Find Best Route" or "Show Traffic"</p>
+    </section>
+
+    <!-- 🚏 Traffic Signal Timings -->
+    <section class="signal-info">
+        <h2>Traffic Signal Timings</h2>
+        <p id="signal-status">Loading data...</p>
+    </section>
+
+    <!-- 🔔 Custom Alerts -->
+    <section class="custom-alerts">
+        <h2>Set Custom Alerts</h2>
+        <select id="alert-options">
+            <option value="accident">🚧 Accident Alerts</option>
+            <option value="road-closure">🚫 Road Closures</option>
+            <option value="congestion">🔴 Heavy Congestion</option>
+        </select>
+        <button id="set-alert">🔔 Set Alert</button>
+    </section>
+
+    <!-- 🔌 Bluetooth / Wi-Fi Pairing -->
+    <section class="connectivity">
+        <h2>Connect to Vehicle</h2>
+        <button id="connect-vehicle">🔗 Pair with Car</button>
+    </section>
+
+    <!-- 🌐 Language Selection -->
+    <section class="language">
+        <h2>Language Options</h2>
+        <select id="language-select">
+            <option value="en">🇬🇧 English</option>
+            <option value="es">🇪🇸 Spanish</option>
+            <option value="fr">🇫🇷 French</option>
+            <option value="hi">🇮🇳 Hindi</option>
+        </select>
+    </section>
+
+    <!-- 📍 GPS & Sensor Data -->
+    <section class="vehicle-data">
+        <h2>Vehicle Data</h2>
+        <p>GPS: <span id="gps-data">Loading...</span></p>
+        <p>Speed: <span id="speed-data">0 km/h</span></p>
+    </section>
+
+    <!-- 🔐 Login -->
+    <section class="login">
+        <button id="login-btn">🔑 Login</button>
+    </section>
+
+    <footer>
+        <p>🚦 TrafficAI | Smart Traffic Solutions</p>
+    </footer>
+
+</body>
+</html>
